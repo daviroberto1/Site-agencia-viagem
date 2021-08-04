@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p>Agência de Viagens</p>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pacotes">Pacotes</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div id="home" class="header-content">
+            <h1>Veneza</h1>
+            <p>Conheça essa maravilhosa cidade e aprecie suas belezas</p>
+            <button>Saiba mais</button>
+        </div>
+    </header>
+
+    <section id="pacotes" class="pacotes">
+        <h1 class="pacotes-title">Conheça nossos pacotes</h1>
+
+        <div class="pacotes-cards">
+
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Promoção</p>
+                </div>
+
+                <div class="card-tag card-tag-bottom">
+                    <p>R$12000.00</p>
+                </div>
+
+                <img class="card-image" src="assets/paris.jpg" alt="Torre Eiffel">
+                <div class="card-content">
+                    <h1>Pacote 6 noites hotel premium</h1>
+                    <ul>
+                        <li><i data-feather="coffee"></i> Café da manha incluso</li>
+                        <li><i data-feather="wifi"></i> Wifi</li>
+                        <li><i data-feather="briefcase"></i> Serviço de bagagens</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-tag card-tag-bottom">
+                    <p>R$17000.00</p>
+                </div>
+
+                <img class="card-image" src="assets/berlim.jpg" alt="Berlim,Alemanha">
+                <div class="card-content">
+                    <h1>Pacote 4 dias em Berlim</h1>
+                    <ul>
+                        <li><i data-feather="coffee"></i> Café da manha incluso</li>
+                        <li><i data-feather="wifi"></i> Wifi</li>
+                        <li><i data-feather="briefcase"></i> Serviço de bagagens</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-tag card-tag-bottom">
+                    <p>R$14000.00</p>
+                </div>
+
+                <img class="card-image" src="assets/australia.jpg" alt="Australia,Opera House">
+                <div class="card-content">
+                    <h1>Pacote 5 dias na Austrália</h1>
+                    <ul>
+                        <li><i data-feather="coffee"></i> Café da manha incluso</li>
+                        <li><i data-feather="wifi"></i> Wifi</li>
+                        <li><i data-feather="briefcase"></i> Serviço de bagagens</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <h1 class="servicos-title">Serviços</h1>
+        <div class="servicos-cards">
+            <div class="card">
+                <i data-feather="map"></i>
+                <div class="card-content">
+                    <h3>Tours Guiado</h3>
+                    <p> Os tours guiados são passeios que são realizados com auxílio de um guia, que além de dar informações sobre o local vai nos conduzir ao longo do trajeto.</p>
+                </div>
+                <button>Saiba mais</button>
+            </div>
+
+            <div class="card">
+                <i data-feather="camera"></i>
+                <div class="card-content">
+                    <h3>Fotografia Profissional</h3>
+                    <p> Nossos fotógrafos estão acostumados a registrar os melhores momentos das viagens para que você aproveite a paisagem sem se preocupar.</p>
+                </div>
+                <button>Saiba mais</button>
+            </div>
+
+            <div class="card">
+                <i data-feather="navigation"></i>
+                <div class="card-content">
+                    <h3>Aluguel de Veículo</h3>
+                    <p> Para os clientes que preferem explorar o ambiente sozinhos e curtem a liberdade, oferecemos o serviço de aluguel de veículos com preços super em conta.</p>
+                </div>
+                <button>Saiba mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="contato-card">
+            <h1>Entre em contato</h1>
+            <ul>
+                <li><i data-feather="coffee"></i>Endereço: Rua do Bom Jesus, xx</li>
+                <li><i data-feather="coffee"></i>Email: xxxxxxx@gmail.com</li>
+                <li><i data-feather="coffee"></i>Telefone: (81)xxxx-xxxx</li>
+            </ul>
+        </div>
+        <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=recife%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+    </section>
+    <script>
+        feather.replace()
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
